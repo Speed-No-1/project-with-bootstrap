@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am using bootstrap 4 with html</title>
+    <!-- font awasome -->
+
+    <script src="https://kit.fontawesome.com/de2ff5cdeb.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        /* img {
+            border: 2px solid black;
+
+        }
+
+        /* .about-section{
+            display: flex;
+            float: left;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        } */
+        .my-link-style:hover{
+            background-color: rgb(57, 84, 65);
+            font-style: italic;
+            
+        }
+        .style{
+            transform: 3s;
+            border-radius: 14px;
+            border: red;
+        }
+        .style:hover{
+            transform: scale(1.1);
+            transform: 3s;
+           
+            border-radius: 15px;
+            
+            
+        }
+        .italy{
+            font-style: italic;
+        }
+        #feedback{
+            background-color: #0d0442;
+            padding: 7% 10%;
+        }
+        .hr-style{
+            border: 5px dotted rgb(215, 22, 22);
+            align-items: center;
+            width: auto;
+            
+        }
+        .carousel-item{
+            padding: 5% 5%;
+            text-align: center;
+            font-style: italic;
+        }
+        .feedback-img{
+            width: 150px;
+            height: auto;
+        }
+        .carousel-indicators{
+            bottom: -20px;
+        }
+        
+        
+        
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <header>
+            <nav class="navbar navbar-expended bg-primary navbar-dark fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img src="ok/book.png" alt="logo" style="width: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                
+            </nav>
+        </header> <br><br> <br> <br><br><br><br> -->
+        <header class="bg-primary" >
+            <div class="row">
+                <div class="col-lg-5 m-auto py-2">
+                    <h1 class="italy text-white text-center mb-0 ">This Is Sujon</h1>
+                </div>
+
+                <div class="col-lg-7 py-3">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"> <a class="my-link-style text-white nav-link" href="#">Home</a></li>
+                        <li class="nav-item"> <a class="my-link-style text-white nav-link" href="#">Tutorial</a></li>
+                        <li class="nav-item"> <a  class="my-link-style text-white nav-link" href="#">Contact Us</a></li>
+                       
+                    </ul>
+
+                </div>
+            </div>
+
+        </header> <br> <br><br><br>
+
+        <main>
+            <div class="service-section bg-light pt-3">
+                <div class="title text-center mb-3">
+                    <!-- i am using here badge bootstrap -->
+                    <h3 class="italy font-weight-bold "><span class="badge bg-warning rounded-pill">Services</span></h3>
+                    
+                </div> <br> <br>
+
+                <div class="row text-left text-md-center ">
+                    <div class="col-lg-3   col-md-6 bg-success text-white mb-3 mt-3 ">
+                        <i
+                            class=" bg-primary p-3 fa-2x text-white rounded-circle mb-3 fa-solid fa-hand-holding-medical"></i>
+                        <h5 class="text-uppercase bg-danger">Web designing</h5>
+                        <p class="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            architecto eum, fuga enim corporis ducimus reiciendis veniam reprehenderit sint itaque.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 bg-dark text-white mb-3 mt-3">
+                        <i class=" bg-primary p-3 fa-2x text-white rounded-circle mb-3 fa-solid fa-hand-holding-medical"></i>
+                        <h5 class="text-uppercase bg-danger">App developer</h5>
+                        <p class=" font-italic bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Temporibus architecto eum, fuga enim corporis ducimus reiciendis veniam reprehenderit sint
+                            itaque.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 bg-secondary mt-3 mb-3">
+                        <i
+                            class=" bg-primary p-3 fa-2x text-white rounded-circle mb-3 fa-solid fa-hand-holding-medical"></i>
+                        <h5 class="text-uppercase bg-danger">Animation maker</h5>
+                        <p class="bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            architecto eum, fuga enim corporis ducimus reiciendis veniam reprehenderit sint itaque.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 bg-primary mt-3 mb-3 ">
+                        <i
+                            class=" bg-primary p-3 fa-2x text-white rounded-circle mb-3 fa-solid fa-hand-holding-medical"></i>
+                        <h5 class="text-uppercase bg-danger">photo designing</h5>
+                        <p class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            architecto eum, fuga enim corporis ducimus reiciendis veniam reprehenderit sint itaque.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="img-section ">
+                            <img class="border rounded-circle img-fluid" src="ok/sujon.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6">
+
+
+                        <div class="about-desc">
+                            <h1 class=" italy text-uppercase text-center">About Me</h1>
+                            <p class="italy">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Possimus temporibus tenetur blanditiis rem asperiores ad quis! Rem tenetur ut earum
+                                nostrum
+                                culpa suscipit sapiente quibusdam
+                                aliquam veniam inventore praesentium ex ea illum eius nihil sit accusamus impedit,
+                                laboriosam eaque animi beatae soluta. Hic,
+                                at sapiente! Sint dicta asperiores in voluptatem.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Delectus recusandae nesciunt debitis sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quisquam debitis veniam ad veritatis cupiditate error sunt eos temporibus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt labore accusamus nisi facilis fugiat sint natus eligendi saepe excepturi.
+                            </p>
+                            
+
+                        </div>
+                    </div>
+
+                </div><br> <br>
+
+                <a href="#demo" data-toggle="collpase">Learn More</a>
+
+                            <div id="demo" class="collpase">
+                                <p class="italy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusantium reprehenderit, eveniet et tempora vitae quam ipsam facilis, nemo, ex autem corporis odio sunt sapiente sed quasi perferendis quia cumque vel. Soluta at officiis voluptatibus dolor tempora modi necessitatibus repellat doloribus molestiae ducimus velit itaque facere accusantium, a, suscipit rerum.</p>
+                            </div>
+
+                            <!-- i used here button group
+                            I am using here tooltip -->
+
+
+
+                <div class="btn-group">
+                    <button class=" btn-block btn btn-outline-primary mb-3 btn-lg"
+                    data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to download CV">CV Download</button>
+                <button class="btn btn-outline-primary mb-3 btn-lg"
+                data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to download"> Download</button>
+                <a href="#" class="btn btn-outline-primary mb-3 btn-lg"
+                data-bs-toggle="tooltip"
+                         data-bs-placement="left"
+                         title="Click here to visit my chenal">Check My Chenal</a>
+                </div>
+
+                <div class="col">
+                    <h2 class="italy text-center">Welcome to my bootstrap website</h2>
+
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                                If you have visit Youtube ! <a class="text-decoration-none"
+                                    href="htts://www.Youtube.com">Visit Here</a>
+                            </div>
+
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                                If you have visit my facebook account ! <a class="text-decoration-none"
+                                    href="htts://www.facebook.com/YoungBoy222"> Click here </a>
+                            </div>
+
+                </div>
+                <!-- about section is end -->
+                <!-- card degin start here -->
+
+                <div class="Toutorial bg-light text-center ">
+                    <div class="title text-center mb-3">
+                        <h3 class="italy font-weight-bolder">Some Detals</h3>
+
+                    </div>
+                    <div class="row ">
+                        <div class="my-5 col-sm-12 col-lg-3 ">
+                            <div class=" style card bg-primary text-white">
+                                <div class="card-header">
+
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="bg-danger ">Study</h4>
+                                    <p>My praimary school name is Boro Bali Hara Govt primary school.And after that I got admissiton the high school name Doula govt high school. Than I study well and finally I admited a govt collage. The collage name is Setabgonj Govt Collage.Now I am doing graduated</p>
+                                </div>
+                                <div class="card-footer">
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="my-5 col-sm-12 col-lg-3">
+                            <div class=" style card bg-primary text-white">
+                                <div class="card-header">
+
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="bg-danger ">Web degisning</h4>
+                                    <p>My praimary school name is Boro Bali Hara Govt primary school.And after that I got admissiton the high school name Doula govt high school. Than I study well and finally I admited a govt collage. The collage name is Setabgonj Govt Collage.Now I am doing graduated</p>
+                                </div>
+                                <div class="card-footer">
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class=" my-5 col-sm-12 col-lg-3">
+                            <div class=" style card bg-primary text-white">
+                                <div class="card-header">
+
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="bg-danger ">Family</h4>
+                                    <p>My praimary school name is Boro Bali Hara Govt primary school.And after that I got admissiton the high school name Doula govt high school. Than I study well and finally I admited a govt collage. The collage name is Setabgonj Govt Collage.Now I am doing graduated</p>
+                                </div>
+                                <div class="card-footer">
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="my-5 col-sm-12 col-lg-3">
+                            <div class="style card bg-primary text-white">
+                                <div class="card-header">
+
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="bg-danger ">Friends</h4>
+                                    <p>My praimary school name is Boro Bali Hara Govt primary school.And after that I got admissiton the high school name Doula govt high school. Than I study well and finally I admited a govt collage. The collage name is Setabgonj Govt Collage.Now I am doing graduated</p>
+                                </div>
+                                <div class="card-footer">
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                    <!-- card degisn end from here -->
+                <!-- customer review section is starts -->
+                <div class="customer-review bg-light text-center">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">Customer Review</h3>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <blockquote class="blockquote">
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                <p>Lorem ipsum dolor sit, amet 
+                                    consectetur adipisicing elit.
+                                     Dolore id ducimus similique
+                                      alias dolores a quis officiis
+                                       odit, doloremque asperiores!
+                                       In this website we can learn <abbr title="bootstrap">bst4</abbr>
+
+                                </p>
+                                <footer class="blockquote-footer">
+                                    Sujon Roy who is a <cite>Web Designer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <blockquote class="blockquote">
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                <p>Lorem ipsum dolor sit, amet 
+                                    consectetur adipisicing elit.
+                                     Dolore id ducimus similique
+                                      alias dolores a quis officiis
+                                       odit, doloremque asperiores!
+                                       In this website we can learn <abbr title="bootstrap">bst4</abbr>
+
+                                </p>
+                                <footer class="blockquote-footer">
+                                    Sujon Roy who is a <cite>Web Designer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <blockquote class="blockquote">
+                                <i class="p-2 fa-3x fas fa-user-circle"></i>
+                                <p>Lorem ipsum dolor sit, amet 
+                                    consectetur adipisicing elit.
+                                     Dolore id ducimus similique
+                                      alias dolores a quis officiis
+                                       odit, doloremque asperiores!
+                                       In this website we can learn <abbr title="bootstrap">bst4</abbr>
+
+                                </p>
+                                <footer class="blockquote-footer">
+                                    Sujon Roy who is a <cite>Web Designer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- customer review section is end -->
+                <!-- toggleable dynamic tab starts -->
+                <div class="other-section">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a data-toggle="pill" class="nav-link active" href="#edu">Education</a></li>
+                        <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#ski">Skill</a></li>
+                        <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#hob">Hobby</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="edu" class="tab-pane active"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt voluptas maxime minima reprehenderit tempore quam enim repellendus asperiores dolores?
+                        </p></div>
+
+                        <div id="ski" class="tab-pane fade"><p>Ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt voluptas maxime minima reprehenderit tempore quam enim repellendus asperiores dolores?
+                            
+                        </p></div>
+                        <div id="hob" class="tab-pane fade"><p>Dolor sit amet consectetur adipisicing elit. Ut nesciunt voluptas maxime minima reprehenderit tempore quam enim repellendus asperiores dolores?
+                            
+                        </p></div>
+    
+
+                    </div>
+                    
+                </div> <br>
+                <!-- toggleable dynamic tab ends -->
+
+                <!-- form starts from here -->
+
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 ">
+                        <h4 class="my-3">If you want to join with me</h4>
+                        <h2>Than Fill The Form</h2>
+                    <form style="height: 450px;" class="p-3 bg-dark text-white w-50 " action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" name="name" id="name" class="form-control" required />
+    
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="text" name="name" id="name" class="form-control" required />
+                            <div class="form-text">Your email will remian private. We will not share with anyone</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="mb-3">
+                            <div class="form-check-inline" >
+                                <input type="radio" class="form-check-input" id="male"/>
+                                <label for="male">Male</label>
+                            </div>
+                            
+        
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" id="female" re/>
+                                <label for="female">Female</label>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="tnc" required/>
+                                <label for="tnc">Terms and conditions</label>
+                            </div>
+                            
+        
+                            
+    
+                        </div>
+    
+    
+    
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <!-- i am using here tooltip -->
+                                    <button class="btn btn-info" type="submit"
+                                    data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to submit"> Submit</button>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="mb-3">
+                                    <button class="btn btn-info" type="reset"
+                                    data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to reset"> Reset</button>
+                                </div>
+                            </div>
+    
+                        </div>                    
+                            
+                        
+                    </form>
+    
+                    </div>
+
+
+                    <div class="col-sm-12 col-lg-6 ">
+                        <h4 class="my-3">If You Don't Have Email</h4>
+                        <h2>Than Fill The Form</h2>
+                    <form style="height: 450px;" class="p-3 bg-dark text-white w-50" action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" name="name" id="name" class="form-control" required />
+    
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone number" class="form-label">Number:</label>
+                            <input type="number" name="name" id="name" class="form-control" required />
+                            <div class="form-text">Your Number will Remian Private. We Will Not Share With Anyone</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="mb-3">
+                            <div class="form-check-inline" >
+                                <input type="radio" class="form-check-input" id="male"/>
+                                <label for="male">Male</label>
+                            </div>
+                            
+        
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" id="female" re/>
+                                <label for="female">Female</label>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="tnc" required/>
+                                <label for="tnc">Terms and conditions</label>
+                            </div>
+                            
+        
+                            
+    
+                        </div>
+    
+    
+    
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <!-- i am using here tooltip -->
+                                    <button class="btn btn-info" type="submit"
+                                    data-bs-toggle="tooltip"
+                         data-bs-placement="bottom"
+                         title="Click here to Submit"> Submit</button>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="mb-3">
+                                    <button class="btn btn-info" type="reset"
+                                    data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to Reset"> Reset</button>
+                                </div>
+                            </div>
+    
+                        </div>                    
+                            
+                        
+                    </form>
+    
+                    </div>
+
+                   
+
+                </div>
+
+                <!-- form ends from here -->
+
+                
+
+
+
+                <!-- list group -->
+                <div class="student-list mt-5 mb-1">
+                    <h4>Top Students List </h4> <br>
+                    <ul class="list-group ">
+                        
+                        <li class="list-group-item  bg-primary text-white ">Sujon Roy</li>
+                        <li class="list-group-item  bg-secondary text-white ">Abu Sayed</li>
+                        <li class="list-group-item  bg-danger text-white ">Sumon Roy</li>
+                        <li class="list-group-item  bg-dark text-white ">Nitu Roy</li>
+                        <li class="list-group-item  bg-success text-white ">Suchona Roy</li>
+                        <a href="# " class="list-group-item list-group-item bg-primary text-white">Horeklal Roy</a>
+                    </ul>
+                </div>
+                <!-- list group ends-->
+
+                <!-- table start from here -->
+                <h1>Top Results</h1>
+                <table class="table table-bordered p-3 table-hover table-success">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Student Name</th>
+                            <th>Learning Year</th>
+                            <th>Subject</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sujon Roy</td>
+                            <td>2022</td>
+                            <td>Web Designer</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>Abu Sayed</td>
+                            <td>2019</td>
+                            <td>All Expert</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>Sumon Roy</td>
+                            <td>2022</td>
+                            <td>Animation</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr class="table-danger">                        
+                            
+                            <td>Nitu Roy</td>
+                            <td>2022</td>
+                            <td>Web Designer</td>
+                            <td>4.60</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            
+                            <td>Suchona Roy</td>
+                            <td>2022</td>
+                            <td>Animation</td>
+                            <td>4.50</td>
+                        </tr>
+                        <tr class="table-muted">
+                            <td>Horeklal Roy</td>
+                            <td>2021</td>
+                            <td>App Developer</td>
+                            <td>4.44</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- table ends from here -->
+
+
+
+                <!-- media object start from here -->
+                <h1>Comments Here</h1>
+                <div class="m-4">
+                <div class=" d-flex">
+                    <div class="flex-shrink-0">
+                        <img style="width: 80px;" class="rounded-circle" src="ok/sujon2.jpg" alt="">
+                    </div>
+                       <div class="flex ms-3">
+                        <h5>Sumon Roy <small class="text-muted"><i>posted on  April 20, 2022</i></small></h5>
+                        
+                        <p>  This is the best website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi doloribus saepe reiciendis aspernatur sed nihil fugit! Iusto, ratione et!</p>
+    
+                       </div>
+                    </div>
+                </div><br><br>
+
+                <div class="m-4">
+                    <div class=" d-flex">
+                        <div class="flex-shrink-0">
+                            <img style="width: 80px;" class="rounded-circle" src="ok/sujon4.jpg" alt="">
+                        </div>
+                        
+                           <div class="flex ms-3">
+                            <h5>Sujon Roy <small class="text-muted"><i>posted on  April 20, 2022</i></small></h5>
+                            
+                            <p> I love to use this website.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi doloribus saepe reiciendis aspernatur sed nihil fugit! Iusto, ratione et!</p>
+        
+                           </div>
+                           
+                        </div>
+                    </div> <br> <br>
+
+                    <div class="m-4">
+                        <div class=" d-flex">
+                            <div class="flex-shrink-0">
+                                <img style="width: 80px;" class="rounded-circle" src="ok/sujon3.jpg" alt="">
+                            </div>
+                            
+                               <div class="flex ms-3">
+                                <h5>Horeklal Roy <small class="text-muted"><i>posted on  April 20, 2022</i></small></h5>
+                                
+                                <p> I love to use this website.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi doloribus saepe reiciendis aspernatur sed nihil fugit! Iusto, ratione et!</p>
+            
+                               </div>
+                               
+                            </div>
+                        </div>
+
+                <div>
+                    <h4>Write some Comments here..</h4>
+                    <textarea name="" id="" cols="60" rows="5" placeholder="Text some word about your experience..."></textarea>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <button 
+                        class="btn btn-info" 
+                        type="set"
+                         data-bs-toggle="tooltip"
+                         data-bs-placement="right"
+                         title="Click here to Comments"> Comments</button>
+                    </div>
+                </div>
+
+                <!-- media object ends from here -->
+
+                <!-- slider section starts from here -->
+                <div class="container2 text-white">
+                    <section id="feedback">
+                        <div class="section-title">
+                            <h3 class="text-center">Feedback</h3>
+                            <hr class="hr-style"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" >
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum delectus fuga animi est explicabo beatae, consequuntur cumque necessitatibus perferendis quas placeat non, fugiat nihil,
+                                             doloremque ad laboriosam soluta hic ratione.</p>
+                                             <img class="feedback-img rounded-circle mb-3" src="ok/sujon.jpg" alt="">
+                                             <h6>Sujon Roy</h6>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <p>Sit, amet consectetur adipisicing elit. Laborum delectus fuga animi est explicabo beatae, consequuntur cumque necessitatibus perferendis quas placeat non, fugiat nihil,
+                                            doloremque ad laboriosam soluta hic ratione.</p>
+                                            <img class="feedback-img rounded-circle mb-3" src="ok/sujon2.jpg" alt="">
+                                            <h6>Rahul Roy</h6>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <p>Dolor sit, amet consectetur adipisicing elit. Laborum delectus fuga animi est explicabo beatae, consequuntur cumque necessitatibus perferendis quas placeat non, fugiat nihil,
+                                            doloremque ad laboriosam soluta hic ratione.</p>
+                                            <img class="feedback-img rounded-circle mb-3" src="ok/sujon4.jpg" alt="">
+                                            <h6>Que Roy</h6>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                 <!-- slider section ends from here -->
+                 <!-- progress-bar start here -->
+                 <div class="progress">
+                     <div
+                     class="progress-bar bg-primary w-25"
+                     role="progressbar"
+                     aria-valuemax="100"
+                     aria-valuemin="25">
+
+                     </div>
+                      
+                     <div
+                     class="progress-bar bg-warning w-25"
+                     role="progressbar"
+                     aria-valuemax="100"
+                     aria-valuemin="25">
+
+                     </div>
+
+                     <div
+                     class="progress-bar bg-success w-25"
+                     role="progressbar"
+                     aria-valuemax="100"
+                     aria-valuemin="25">
+
+                     </div>
+
+                     <div
+                     class="progress-bar bg-danger w-25"
+                     role="progressbar"
+                     aria-valuemax="100"
+                     aria-valuemin="25">
+
+                     </div>
+
+                 </div>
+
+         
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+
+    
+</body>
+
+</html>
